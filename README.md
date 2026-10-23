@@ -2,6 +2,8 @@
 
 **The agent that remembers you.**
 
+[![CI](https://github.com/arj-co/loci/actions/workflows/ci.yml/badge.svg)](https://github.com/arj-co/loci/actions/workflows/ci.yml)
+
 Loci is a memory-native personal assistant built on **CockroachDB**. Every conversation,
 preference, relationship, goal, and open task lives in one durable database. Start a new
 session, restart the server, or come back tomorrow — Loci recalls what matters with
