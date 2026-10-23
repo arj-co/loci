@@ -1,0 +1,51 @@
+1
+00:00:00,600 --> 00:00:05,033
+This is Loci, a personal assistant whose memory lives in CockroachDB.
+
+2
+00:00:05,050 --> 00:00:09,578
+Twelve memories, three sessions, and four open tasks are already here.
+
+3
+00:00:09,650 --> 00:00:11,075
+Ask what it remembers.
+
+4
+00:00:11,300 --> 00:00:17,353
+Loci embeds the question, runs a cosine vector search, and answers from the memories it retrieves.
+
+5
+00:00:20,200 --> 00:00:23,997
+The trace shows every recalled memory, with its similarity score.
+
+6
+00:00:24,300 --> 00:00:27,412
+The strongest match: Maya, your cofounder.
+
+7
+00:00:29,400 --> 00:00:35,003
+Now start a fresh session and share something new. My sister Nisha is a pediatrician in Boston.
+
+8
+00:00:36,000 --> 00:00:43,613
+A memory writer extracts the durable fact, embeds it, and writes it to CockroachDB. The memory palace updates in place.
+
+9
+00:00:45,700 --> 00:00:52,067
+Open another session and ask about Nisha. There is no local chat history, but the vector index brings her back.
+
+10
+00:00:54,000 --> 00:01:00,049
+Tasks live in the same database. Ask for one in plain language, and Loci resolves the due date.
+
+11
+00:01:04,200 --> 00:01:08,115
+One durable store holds messages, memories, and tasks.
+
+12
+00:01:09,400 --> 00:01:16,327
+Under the hood, a prefixed distributed vector index scopes recall to this user's live memories before the top-k scan.
+
+13
+00:01:18,200 --> 00:01:22,291
+Loci: the agent that remembers you, built on CockroachDB.
